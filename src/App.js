@@ -9,7 +9,7 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Switch>
-				<Route path="/signin" exact component={Signin} />
+				<Route path="/signin" exact render={Signin} />
 				<Route path="/" exact render={withAuth(Home)} />; }} />
 				<Route component={Error} />
 			</Switch>
